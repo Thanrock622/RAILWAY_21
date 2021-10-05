@@ -12,7 +12,7 @@ ET_IQ	TINYINT UNSIGNED NOT NULL CHECK (ET_IQ<=20),
 ET_Gmath TINYINT UNSIGNED NOT NULL CHECK (ET_Gmath <=20),
 ET_English  TINYINT UNSIGNED NOT NULL CHECK (ET_English <=50),
 Training_Class	NVARCHAR(50) NOT NULL UNIQUE KEY,
-Evaluation_Notes	NVARCHAR(100)
+Evaluation_Notes	NVARCHAR(100) NOT NULL
 );
 	-- TAO BANG GHI --
 INSERT INTO trainee(Full_Name,		Birth_Date,		Gender,		ET_IQ,ET_Gmath,	ET_English,	Training_Class,	Evaluation_Notes)
